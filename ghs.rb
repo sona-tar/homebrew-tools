@@ -12,23 +12,8 @@ class Ghs < Formula
   end
 
   version VERSION
-  head 'https://github.com/sona-tar/ghs', :using => :git, :branch => 'master'
-
-  if build.head?
-    depends_on 'go' => :build
-  end
 
   def install
-    if build.head?
-      gopath = buildpath/'.go'
-
-      ( gopath/'src/github.com/sona-tar/ghs' ).make_relative_symlink buildpath
-
-      ENV['GOPATH'] = gopath
-      system 'go', 'build'
-
-    end
-
     bin.install 'ghs'
   end
 end
