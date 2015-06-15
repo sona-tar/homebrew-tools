@@ -41,10 +41,6 @@ class Ghs < Formula
 
     end
 
-    if build.with? 'completions'
-      zsh_completion.install 'zsh/_ghq'
-    end
-
     bin.install 'ghs'
   end
 end
