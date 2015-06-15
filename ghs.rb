@@ -24,11 +24,6 @@ class Ghs < Formula
   version VERSION
   head 'https://github.com/sona-tar/ghs', :using => :git, :branch => 'master'
 
-  if build.head?
-    depends_on 'go' => :build
-    depends_on 'git' => :build
-  end
-
   def install
     if build.head?
       gopath = buildpath/'.go'
