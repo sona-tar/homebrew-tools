@@ -23,7 +23,23 @@ class Ghs < Formula
   go_resource "github.com/tcnksm/go-latest" do
     url "https://github.com/tcnksm/go-latest.git", :branch => "master"
   end
+  
+  go_resource "golang.org/x/net" do
+    url "https://github.com/golang/net.git", :branch => "master"
+  end
 
+  go_resource "github.com/hashicorp/go-version" do
+    url "https://github.com/hashicorp/go-version.git", :branch => "master"
+  end
+
+  go_resource "github.com/google/go-querystring" do
+    url "https://github.com/google/go-querystring.git", :branch => "master"
+  end
+  # go_resource "" do
+  #   url "https://.git", :branch => "master"
+  # end
+
+  
   def install
     ENV["GOPATH"] = buildpath
     mkdir_p buildpath/"src/github.com/sona-tar/ghs"
