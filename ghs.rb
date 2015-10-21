@@ -2,7 +2,7 @@ require "language/go"
 
 class Ghs < Formula
   homepage "https://github.com/sona-tar/ghs"
-  url  "https://github.com/sona-tar/ghs", :using => :git, :tag => "0.0.4"
+  url  "https://github.com/sona-tar/ghs", :using => :git, :tag => "0.0.5"
   head "https://github.com/sona-tar/ghs", :using => :git, :branch => "master"
 
   depends_on "go" => :build
@@ -11,19 +11,19 @@ class Ghs < Formula
   go_resource "github.com/google/go-github" do
     url "https://github.com/google/go-github.git", :branch => "master"
   end
-  
+
   go_resource "github.com/jessevdk/go-flags" do
     url "https://github.com/jessevdk/go-flags.git", :branch => "master"
   end
-  
+
   go_resource "github.com/mgutz/ansi" do
     url "https://github.com/mgutz/ansi.git", :branch => "master"
   end
-  
+
   go_resource "github.com/tcnksm/go-latest" do
     url "https://github.com/tcnksm/go-latest.git", :branch => "master"
   end
-  
+
   go_resource "golang.org/x/net" do
     url "https://github.com/golang/net.git", :branch => "master"
   end
@@ -39,7 +39,7 @@ class Ghs < Formula
   #   url "https://.git", :branch => "master"
   # end
 
-  
+
   def install
     ENV["GOPATH"] = buildpath
     mkdir_p buildpath/"src/github.com/sona-tar/ghs"
