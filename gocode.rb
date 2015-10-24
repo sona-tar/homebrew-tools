@@ -4,6 +4,7 @@ class Gocode < Formula
   homepage "https://github.com/nsf/gocode"
   url  "https://github.com/nsf/gocode", :using => :git, :branch => "master"
   head "https://github.com/nsf/gocode", :using => :git, :branch => "master"
+  version "20151024"
 
   depends_on "go" => :build
   depends_on :hg => :build
