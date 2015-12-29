@@ -2,7 +2,7 @@ require "language/go"
 
 class Ghs < Formula
   homepage "https://github.com/sona-tar/ghs"
-  url  "https://github.com/sona-tar/ghs", :using => :git, :tag => "0.0.5"
+  url  "https://github.com/sona-tar/ghs", :using => :git, :tag => "0.0.6"
   head "https://github.com/sona-tar/ghs", :using => :git, :branch => "master"
 
   depends_on "go" => :build
@@ -22,6 +22,10 @@ class Ghs < Formula
 
   go_resource "github.com/tcnksm/go-latest" do
     url "https://github.com/tcnksm/go-latest.git", :branch => "master"
+  end
+
+  go_resource "github.com/motemen/go-gitconfig" do
+    url "https://github.com/motemen/go-gitconfig.git", :branch => "master"
   end
 
   go_resource "golang.org/x/net" do
