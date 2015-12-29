@@ -32,6 +32,10 @@ class Ghs < Formula
     url "https://github.com/golang/net.git", :branch => "master"
   end
 
+  go_resource "golang.org/x/oauth2" do
+    url "https://github.com/golang/oauth2.git", :branch => "master"
+  end
+
   go_resource "github.com/hashicorp/go-version" do
     url "https://github.com/hashicorp/go-version.git", :branch => "master"
   end
