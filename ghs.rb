@@ -2,7 +2,7 @@ require "language/go"
 
 class Ghs < Formula
   homepage "https://github.com/sona-tar/ghs"
-  url  "https://github.com/sona-tar/ghs", :using => :git, :tag => "0.0.8"
+  url  "https://github.com/sona-tar/ghs", :using => :git, :tag => "0.0.9"
   head "https://github.com/sona-tar/ghs", :using => :git, :branch => "master"
 
   depends_on "go" => :build
