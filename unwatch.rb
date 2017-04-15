@@ -1,6 +1,6 @@
 require "language/go"
 
-class unwatch < Formula
+class Unwatch < Formula
   homepage "https://github.com/sona-tar/github-unwatch-cli"
   url  "https://github.com/sona-tar/github-unwatch-cli", :using => :git, :tag => "0.0.1"
   head "https://github.com/sona-tar/github-unwatch-cli", :using => :git, :branch => "master"
