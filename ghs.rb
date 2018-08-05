@@ -6,7 +6,7 @@ class Ghs < Formula
   head "https://github.com/sona-tar/ghs", :using => :git, :branch => "master"
 
   depends_on "go" => :build
-  depends_on :hg => :build
+  depends_on "mercurial" => :build
 
   go_resource "github.com/google/go-github" do
     url "https://github.com/google/go-github.git", :branch => "master"

@@ -7,7 +7,7 @@ class Gocode < Formula
   version "20151024"
 
   depends_on "go" => :build
-  depends_on :hg => :build
+  depends_on "mercurial" => :build
 
   def install
     ENV["GOPATH"] = buildpath
